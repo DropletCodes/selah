@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Selah - verse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+    <link rel="icon" href="images/favicon_nocircle.png" type="image/x-icon" />
+
+    <!-- For Google Fonts -->
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="topTitle">Selah</h1>
+
+      <nav>
+        <div class="menu_icon" id="menu_icon"></div>
+        <div class="nav_links hidden" id="nav_links">
+          <a href="index.html">home</a>
+          <a href="slideshow.html">slideshow</a>
+          <a href="quotes.html">quotes</a>
+          <a href="verse.html">verse</a>
+          <a href="prayers.html">prayers</a>
+          <a href="audio.html">audio</a>
+          <a href="about.html">about</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Random Bible Verse</h1>
+
+      <section>
+        <div id="dailyVersesWrapper"></div>
+        <script
+          async
+          defer
+          src="https://dailyverses.net/get/random.js?language=niv"
+        ></script>
+      </section>
+      <section class="verse-reflection">
+        <h3>Take a moment to reflect on this verse.</h3>
+        <ul>
+          <li>Why do you think this verse is important?</li>
+          <li>Can you think of a way to apply it to your life?</li>
+          <li>Is God trying to speak to you through this verse?</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="vertical_nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="slideshow.html">slideshow</a></li>
+        <li><a href="quotes.html">quotes</a></li>
+        <li><a href="verse.html">verse</a></li>
+        <li><a href="prayers.html">prayers</a></li>
+        <li><a href="audio.html">audio</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+      <h3>Selah</h3>
+      <p class="dedication">
+        This page is dedicated to LeGrand.<br />Don't throw yourself into the
+        waves. I'm afraid you'll be lost.
+      </p>
+      <p>Est. 2026 by Caroline Russell</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

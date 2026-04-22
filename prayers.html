@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Selah - verse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+    <link rel="icon" href="images/favicon_nocircle.png" type="image/x-icon" />
+
+    <!-- For Google Fonts -->
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-with-shadow-box">
+    <header>
+      <h1 class="topTitle">Selah</h1>
+
+      <nav>
+        <div class="menu_icon" id="menu_icon"></div>
+        <div class="nav_links hidden" id="nav_links">
+          <a href="index.html">home</a>
+          <a href="slideshow.html">slideshow</a>
+          <a href="quotes.html">quotes</a>
+          <a href="verse.html">verse</a>
+          <a href="prayers.html">prayers</a>
+          <a href="audio.html">audio</a>
+          <a href="about.html">about</a>
+        </div>
+      </nav>
+    </header>
+    <main class="gradient-bg">
+      <h1>Prayers</h1>
+      <section class="shadow-box">
+        <h3>
+          Is there a way I can pray for you today? <br />
+          Please
+          <a href="mailto:selahprayerrequests@gmail.com"
+            >email me at selahprayerrequests@gmail.com</a
+          >
+          or fill out the anonymous form below to let me know. <br />
+          No request is too big/small/vague/specific/weird/etc. - I will be
+          praying!
+        </h3>
+        <!-- action="https://formspree.io/f/xrereqyv" -->
+        <form method="POST" id="form" onsubmit="formSubmitted()">
+          <label for="requestersName">Who am I praying for (optional)?</label>
+          <input
+            type="text"
+            id="requestersName"
+            name="requestersName"
+            placeholder="Name or alias"
+          />
+          <textarea
+            name="prayerRequestBox"
+            id="prayerRequestBox"
+            placeholder="Type your prayer request here!"
+            required
+          ></textarea>
+          <input id="prayerRequestSubmit" type="submit" value="Send" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="vertical_nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="slideshow.html">slideshow</a></li>
+        <li><a href="quotes.html">quotes</a></li>
+        <li><a href="verse.html">verse</a></li>
+        <li><a href="prayers.html">prayers</a></li>
+        <li><a href="audio.html">audio</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+      <h3>Selah</h3>
+      <p class="dedication">
+        This page is dedicated to Kenya.<br />I'm still praying for you!
+      </p>
+      <p>Est. 2026 by Caroline Russell</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

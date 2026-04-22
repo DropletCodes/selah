@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Quotes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+    <link rel="icon" href="images/favicon_nocircle.png" type="image/x-icon" />
+
+    <!-- For Google Fonts -->
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-with-shadow-box">
+    <header>
+      <h1 class="topTitle">Selah</h1>
+
+      <nav>
+        <div class="menu_icon" id="menu_icon"></div>
+        <div class="nav_links hidden" id="nav_links">
+          <a href="index.html">home</a>
+          <a href="slideshow.html">slideshow</a>
+          <a href="quotes.html">quotes</a>
+          <a href="verse.html">verse</a>
+          <a href="prayers.html">prayers</a>
+          <a href="audio.html">audio</a>
+          <a href="about.html">about</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="gradient-bg">
+      <h1>Quotes</h1>
+      <section class="shadow-box">
+        <script>
+          let allClasses = ["img-78", "img-90", "img-92", "img-45"];
+          let allheadings = [
+            "I'm feeling discouraged.",
+            "I'm feeling weary.",
+            "I need a reminder of God's goodness.",
+            "I need a reminder of my salvation and purpose.",
+          ];
+
+          let allQuotes = [
+            [
+              "Be strong and courageous. Do not fear or be in dread of them, for\
+            it is the Lord your God who goes with you. He will not leave you or\
+            forsake you.",
+              "But those who hope in the LORD will renew their strength. They will\
+            soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+              "Whoever pursues righteousness and love finds life, prosperity, and honor.",
+              "God is able to take the mess of our past and turn it into a message. He takes the trials and tests and turns them into a testimony.",
+              "Faith does not eliminate questions. But faith knows where to take them.",
+              "Remember Whose you are and Whom you serve.",
+              "There is not a single thing that Jesus cannot change, control, and conquer because he is the living Lord.",
+              "If you can't fly, then run, If you can't run, then walk, If you can't walk, then crawl, but whatever you do, you have to keep moving forward.",
+              "He is no fool who gives what he cannot keep, to gain what he cannot lose.",
+              "We are all faced with a series of great opportunities brilliantly disguised as impossible situations.",
+              "Be faithful in small things because it is in them that your strength lies.",
+            ],
+            [
+              "Be still, and know that I am God.",
+              "Cast all your anxiety on him because he cares for you.",
+              "Come to me, all you who are weary and burdened, and I will give you rest.",
+              "Do not be conformed to the pattern of this world, but be transformed by the renewing of your mind.",
+              "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.",
+              "I sought the LORD, and he answered me; he delivered me from all my fears.",
+              "The LORD is close to the brokenhearted and saves those who are crushed in spirit.",
+              "God whispers to us in our pleasures, speaks in our conscience, but shouts in our pains.",
+              "What gives me the most hope every day is God's grace; knowing that his grace is going to give me the strength for whatever I face, knowing that nothing is a surprise to God.",
+            ],
+            [
+              "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.",
+              "For the things that are seen are transient, but the things that are unseen are eternal.",
+              "His divine power has granted to us all things that pertain to life and godliness, through the knowledge of him who called us to his own glory and excellence.",
+              "Give thanks to the LORD, for he is good; his love endures forever.",
+              "God does not give us everything we want, but He does fulfill His promises, leading us along the best and straightest paths to Himself.",
+              "Always, everywhere God is present, and always He seeks to discover Himself to each one.",
+            ],
+            [
+              "For by grace you have been saved through faith, and this is not your own doing, it is the gift of God.",
+              "And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.",
+              "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.",
+              "Being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus.",
+              "For to me, to live is Christ and to die is gain.",
+              "To be a Christian means to forgive the inexcusable because God has forgiven the inexcusable in you.",
+              "Your potential is the sum of all the possibilities God has for your life.",
+              "God is most glorified in us when we are most satisfied in Him.",
+            ],
+          ];
+
+          let allAuthors = [
+            [
+              "Deuteronomy 31:6",
+              "Isaiah 40:31",
+              "Proverbs 21:21",
+              "Christine Caine",
+              "Elisabeth Elliot",
+              "Oswald Chambers",
+              "Franklin Graham",
+              "Martin Luther King Jr.",
+              "Jim Elliot",
+              "Chuck Swindoll",
+              "Mother Teresa",
+            ],
+            [
+              "Psalm 46:10",
+              "1 Peter 5:7",
+              "Matthew 11:28",
+              "Romans 12:2",
+              "John 16:33",
+              "Psalm 34:4",
+              "Psalm 34:18",
+              "C.S. Lewis",
+              "Rick Warren",
+            ],
+            [
+              "Lamentations 3:22-23",
+              "2 Corinthians 4:16-18",
+              "2 Peter 1:3",
+              "Psalm 107:1",
+              "Dietrich Bonhoeffer",
+              "A.W. Tozer",
+            ],
+            [
+              "Ephesians 2:8",
+              "Acts 4:12",
+              "Ephesians 2:10",
+              "Philippians 1:6",
+              "Philippians 1:21",
+              "C.S. Lewis",
+              "Charles Stanley",
+              "John Piper",
+            ],
+          ];
+
+          for (let i = 0; i < allQuotes.length; i++) {
+            document.write(
+              `<div class='category ${allClasses[i]}'><br /><h2>${allheadings[i]}</h2><br />`,
+            );
+
+            for (let j = 0; j < allQuotes[i].length; j++) {
+              document.write(
+                `<blockquote>"${allQuotes[i][j]}"<br><p class="quoteAuthor">— ${allAuthors[i][j]}</p></blockquote><br>`,
+              );
+            }
+            document.write("</div>");
+          }
+        </script>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="vertical_nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="slideshow.html">slideshow</a></li>
+        <li><a href="quotes.html">quotes</a></li>
+        <li><a href="verse.html">verse</a></li>
+        <li><a href="prayers.html">prayers</a></li>
+        <li><a href="audio.html">audio</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+      <h3>Selah</h3>
+      <p class="dedication">
+        This page is dedicated to Clive.<br />Thank you for the wardrobe.
+      </p>
+      <p>Est. 2026 by Caroline Russell</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

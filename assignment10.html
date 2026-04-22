@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+    <link rel="icon" href="images/favicon_nocircle.png" type="image/x-icon" />
+
+    <!-- For Google Fonts -->
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-with-shadow-box">
+    <header>
+      <h1 class="topTitle">Selah</h1>
+
+      <nav>
+        <div class="menu_icon" id="menu_icon"></div>
+        <div class="nav_links hidden" id="nav_links">
+          <a href="index.html">home</a>
+          <a href="slideshow.html">slideshow</a>
+          <a href="quotes.html">quotes</a>
+          <a href="verse.html">verse</a>
+          <a href="prayers.html">prayers</a>
+          <a href="audio.html">audio</a>
+          <a href="about.html">about</a>
+        </div>
+      </nav>
+    </header>
+    <main class="gradient-bg">
+      <h1>Assignment 10</h1>
+      <section class="shadow-box">
+        <h2>Why does this page exist?</h2>
+        <video controls width="60%">
+          <source src="images/VID_20260323_112650741.mp4" />
+        </video>
+        <p class="transcript">Transcript: "That's a funny story!"</p>
+
+        <h3>
+          I couldn't find a place to put a table or video in the main website.
+          So this page is here to demonstrate my understanding of the content.
+          This page will not be part of my finished website.
+        </h3>
+
+        <script>
+          var style = [
+            "font-weight",
+            "font-size",
+            "text-decoration",
+            "color",
+            "font-family",
+            "text-align",
+          ];
+          var whatitdoes = [
+            "Makes text bold",
+            "Makes text large or small",
+            '"Decorates" text with underline or strikethrough',
+            "Changes color of text",
+            "Changes font of text",
+            "Positions text horizontally",
+          ];
+          var styleclass = [
+            "font-weight: bold;",
+            "font-size: 20px;",
+            "text-decoration: underline;",
+            "color: red;",
+            "font-family: serif;",
+            "text-align: right;",
+          ];
+        </script>
+
+        <table border="1">
+          <caption>
+            CSS text styles and what they do (table created using JavaScript):
+          </caption>
+
+          <script>
+            for (i = 0; i < whatitdoes.length; i++) {
+              document.write("<tr>");
+              document.write("<td>" + style[i] + "</td>");
+              document.write("<td>" + whatitdoes[i] + "</td>");
+              document.write(
+                '<td style = "' +
+                  styleclass[i] +
+                  '">' +
+                  styleclass[i] +
+                  "</td>",
+              );
+              document.write("</tr>");
+            }
+          </script>
+          <!-- <tr>
+            <script>
+              document.write("<td>" + style[1] + "</td>");
+              document.write("<td>" + whatitdoes[1] + "</td>");
+              document.write(
+                '<td style = "' +
+                  styleclass[1] +
+                  '">' +
+                  styleclass[1] +
+                  "</td>",
+              );
+            </script>
+          </tr>
+          <tr>
+            <script>
+              document.write("<td>" + style[0] + "</td>");
+              document.write("<td>" + whatitdoes[0] + "</td>");
+              document.write(
+                '<td style = "' +
+                  styleclass[0] +
+                  '">' +
+                  styleclass[0] +
+                  "</td>",
+              );
+            </script>
+          </tr>
+          <tr>
+            <script>
+              document.write("<td>" + style[2] + "</td>");
+              document.write("<td>" + whatitdoes[2] + "</td>");
+              document.write(
+                '<td style = "' +
+                  styleclass[2] +
+                  '">' +
+                  styleclass[2] +
+                  "</td>",
+              );
+            </script>
+          </tr>
+          <tr>
+            <script>
+              document.write("<td>" + style[3] + "</td>");
+              document.write("<td>" + whatitdoes[3] + "</td>");
+              document.write(
+                '<td style = "' +
+                  styleclass[3] +
+                  '">' +
+                  styleclass[3] +
+                  "</td>",
+              );
+            </script>
+          </tr>
+          <tr>
+            <script>
+              document.write("<td>" + style[4] + "</td>");
+              document.write("<td>" + whatitdoes[4] + "</td>");
+              document.write(
+                '<td style = "' +
+                  styleclass[4] +
+                  '">' +
+                  styleclass[4] +
+                  "</td>",
+              );
+            </script>
+          </tr>
+          <tr>
+            <script>
+              document.write("<td>" + style[5] + "</td>");
+              document.write("<td>" + whatitdoes[5] + "</td>");
+              document.write(
+                '<td style = "' +
+                  styleclass[5] +
+                  '">' +
+                  styleclass[5] +
+                  "</td>",
+              );
+            </script>
+          </tr> -->
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="vertical_nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="slideshow.html">slideshow</a></li>
+        <li><a href="quotes.html">quotes</a></li>
+        <li><a href="verse.html">verse</a></li>
+        <li><a href="prayers.html">prayers</a></li>
+        <li><a href="audio.html">audio</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+      <h3>Selah</h3>
+      <p class="dedication">
+        This page is dedicated to David.<br />Thank you for writing so many
+        Psalms.
+      </p>
+      <p>Est. 2026 by Caroline Russell</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

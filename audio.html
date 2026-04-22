@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Selah - audio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+    <link rel="icon" href="images/favicon_nocircle.png" type="image/x-icon" />
+
+    <!-- For Google Fonts -->
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="topTitle">Selah</h1>
+
+      <nav>
+        <div class="menu_icon" id="menu_icon"></div>
+        <div class="nav_links hidden" id="nav_links">
+          <a href="index.html">home</a>
+          <a href="slideshow.html">slideshow</a>
+          <a href="quotes.html">quotes</a>
+          <a href="verse.html">verse</a>
+          <a href="prayers.html">prayers</a>
+          <a href="audio.html">audio</a>
+          <a href="about.html">about</a>
+        </div>
+      </nav>
+    </header>
+    <main class="gradient-bg">
+      <h1>Audio Settings</h1>
+      <section class="shadow-box">
+        <h3 class="play-music-h2">
+          Play your favorite background ambience, or the embedded Spotify
+          playlist.
+        </h3>
+        <div class="flex">
+          <ul class="bg-audios">
+            <li
+              class="birds"
+              onclick="
+                document.getElementById('birds').play();
+                document.getElementById('rain').pause();
+                document.getElementById('waves').pause();
+              "
+            >
+              Birdsong
+            </li>
+            <li
+              class="rain"
+              onclick="
+                document.getElementById('rain').play();
+                document.getElementById('birds').pause();
+                document.getElementById('waves').pause();
+              "
+            >
+              Rain
+            </li>
+            <li
+              class="waves"
+              onclick="
+                document.getElementById('waves').play();
+                document.getElementById('birds').pause();
+                document.getElementById('rain').pause();
+              "
+            >
+              Ocean waves
+            </li>
+            <li
+              class="none"
+              onclick="
+                document.getElementById('birds').pause();
+                document.getElementById('rain').pause();
+                document.getElementById('waves').pause();
+              "
+            >
+              None
+            </li>
+
+            <audio id="birds" src="audio/birds.mp3" preload="auto"></audio>
+            <audio id="rain" src="audio/rain.mp3" preload="auto"></audio>
+            <audio id="waves" src="audio/waves.mp3" preload="auto"></audio>
+          </ul>
+          <iframe
+            class="spotify"
+            data-testid="embed-iframe"
+            style="border-radius: 1.6rem"
+            src="https://open.spotify.com/embed/playlist/6fmx8xeSAH0IFPbFO8XpVp?utm_source=generator"
+            width="80%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="vertical_nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="slideshow.html">slideshow</a></li>
+        <li><a href="quotes.html">quotes</a></li>
+        <li><a href="verse.html">verse</a></li>
+        <li><a href="prayers.html">prayers</a></li>
+        <li><a href="audio.html">audio</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+      <h3>Selah</h3>
+      <p class="dedication">
+        This page is dedicated to all the Christian music artists out there.<br />You're
+        doing something wonderful.
+      </p>
+      <p>Est. 2026 by Caroline Russell</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
